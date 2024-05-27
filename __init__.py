@@ -4,9 +4,9 @@ import shelve, User, Customer
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/')  # The slash is directory path. Nothing after means this is the home page.
 def home():
-    return render_template('home.html')
+    return render_template('home.html') # The "return" allows the program to return the webpage selected.
 
 @app.route('/contactUs')
 def contact_us():
